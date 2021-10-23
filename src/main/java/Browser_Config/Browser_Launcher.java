@@ -13,20 +13,20 @@ public static  WebDriver driver ;
 	{
 		if(browser_Type.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\archana\\git\\Chandan_Shalab_TestNG\\CHandan_Shalab_TestNG\\Browser_Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "D:\\Eclipse_Practiee\\Eclipse WorkSpace\\Explore_Data\\Browser_Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.get(URL);
 		}
 		else if(browser_Type.equals("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\archana\\git\\Chandan_Shalab_TestNG\\CHandan_Shalab_TestNG\\Browser_Drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "D:\\Eclipse_Practiee\\Eclipse WorkSpace\\Explore_Data\\Browser_Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			driver.get(URL);
 		}
 		
 		else if(browser_Type.equals("edge"))
 		{
-			System.setProperty("webdriver.edge.driver", "C:\\Users\\archana\\git\\Chandan_Shalab_TestNG\\CHandan_Shalab_TestNG\\Browser_Drivers\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver", "D:\\Eclipse_Practiee\\Eclipse WorkSpace\\Explore_Data\\Browser_Drivers\\msedgedriver.exe");
 			driver = new EdgeDriver();
 			driver.get(URL);
 		}
